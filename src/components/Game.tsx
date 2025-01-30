@@ -7,7 +7,7 @@ const Game: React.FC = () => {
 	const [currentBlockId, setCurrentBlockId] = useState<string>("");
 	const [isLoading, setIsLoading] = useState(true);
 	const [previousImage, setPreviousImage] = useState<StoryImage | null>(null);
-	const [currentStoryPath, setCurrentStoryPath] = useState<string>("/assets/stories/story1");
+	const [currentStoryPath] = useState<string>("/assets/stories/story1");
 
 	useEffect(() => {
 		fetch(`${currentStoryPath}/story.json`)
