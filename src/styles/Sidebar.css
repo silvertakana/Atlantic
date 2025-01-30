@@ -1,0 +1,35 @@
+.sidebar {
+	width: 250px;
+	background: #34495e;
+	color: white;
+	padding: 1.5rem;
+	border-right: 2px solid #2c3e50;
+	overflow-y: auto;
+}
+
+.sidebar h3 {
+	color: #ecf0f1;
+	margin-top: 0;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.sidebar li {
+	margin: 0.5rem 0;
+	padding: 0.3rem;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 3px;
+}
+
+.sidebar {
+	background: var(--bg-secondary);
+	color: var(--text-main);
+	border-right: 2px solid var(--bg-main);
+}
+
+.sidebar h3 {
+	color: var(--text-secondary);
+}

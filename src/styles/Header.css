@@ -1,0 +1,32 @@
+.app-header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .app-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .header-placeholder {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+  }
+
+.app-header {
+  background: var(--bg-main);
+  color: var(--text-main);
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.theme-dropdown {
+  background: var(--bg-tertiary);
+  color: var(--text-main);
+  border: 1px solid var(--bg-main);
+  padding: 0.25rem;
+  border-radius: 4px;
+}
