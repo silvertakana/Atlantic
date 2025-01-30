@@ -1,12 +1,12 @@
 {
-  "homepage": "https://silvertakana.github.io/atlantic",
+  "homepage": "https://silvertakana.github.io/atlantic/",
   "name": "atlantic",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "tsc -b && vite build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
