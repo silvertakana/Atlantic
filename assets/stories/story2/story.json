@@ -1,0 +1,166 @@
+{
+    "title": "Story 2",
+    "description": "This is the content of story 2",
+    "author": "Cilvar",
+    "entrypoint": "start",
+    "storyblocks":{
+        "template":{
+            "content": "text",
+            "image": {"src": "images/default.png"},
+            "choices": [
+                {"text": "Choice", "id": "choice1"}
+            ]
+        },
+        "start": {
+            "content": "This is the content of story 2",
+            "image": {"src": "images/house.png"},
+            "choices": [
+                {"text": "Enter the house", "id": "enter"},
+                {"text": "Stay outside", "id": "outside"}
+            ]
+        },
+        "enter": {
+            "content": "Should I climb up this ladder?",
+            "image": {"src": "images/ladder.png"},
+           "choices": [
+                {"text": "Climb the ladder", "id": "climb"},
+                {"text": "Nah this shit looks sketchy", "id": "outside"}
+            ]
+
+        },
+        "outside": {
+            "content": "You:\"OH NO AN EMPLOYEE!\" *you get brutally ripped apart and died*",
+            "image": {"src": "images/employee.jpg", "offset":{"y":"20%"}},
+            "choices": null
+        },
+        "climb": {
+            "content": "-Oh my god, a beautiful lady!- \n\n Atlantic: \"Hi, I'm Atlantic. You seem tired, come in you can stay for the night :>\"",
+            "image": {"src": "images/entrance.png"},
+            "choices": [
+                {"text": "No thank you, She's definitely a witch. I'm going out", "id": "outside"},
+                {"text": "she seems cute, I'll trust her", "id": "follow"}
+            ]
+        },
+        "follow":{
+            "content": "-This place seems pretty cozy I'd love to stay here.. lets just hope she doesn't wanna eat me..-",
+            "image": {"src": "images/inside.png"},
+            "choices": [
+                {"text": "Next", "id": "follow me"}
+            ]
+        },
+        "follow me":{
+            "content": "Atlantic: \"Come to the balcony\"",
+            "image": {"src": "images/come-with-me.png"},
+
+            "choices": [
+                {"text": "Follow her", "id": "balcony1"},
+                {"text": "Nah i wanna watch TV (skip cutscene)", "id": "movies"}
+            ]
+        },
+        "balcony1":{
+            "content": "Atlantic: \"You ever feel like reality isn't real? Like it's all just a simulation or.. a game?.. People like us sometimes clip outside of reality and fall right here in this.. forsaken infinite ikea store.\" ",
+            "image": {"src": "images/balcony1.png"},
+            "choices": [
+                {"text": "...", "id": "balcony2"}
+            ]
+        },
+        "balcony2":{
+            "content": "Atlantic: \"It's been forever since I meet another person.. I'm so glad you're here..\"",
+            "image": {"src": "images/balcony2.png"},
+            "choices": [
+                {"text": "You:\"If it wasn't for your house, I would have been dead.. so thank you for that\"", "id": "thank you"},
+                {"text": "...", "id": "watch movie?"}
+            ]
+        },
+        "thank you":{
+            "content": "Atlantic: \"You're welcome.. ^v^\"",
+            "image": "prev",
+            "choices": [
+                {"text": "Next", "id": "watch movie?"}
+            ]
+        },
+        "watch movie?":{
+            "content": "Atlantic: \"So, you wanna watch some movies with me? The night is gonna be long\"",
+            "image": "prev",
+            "choices": [
+                {"text": "sure, why not!", "id": "movies"},
+                {"text": "I'm tired, I'll go to sleep", "id": "sleep"}
+            ]
+        },
+        "movies":{
+            "content": "Atlantic: \"I found a few disks lying around in the store, let's watch them together!\"",
+            "image": {"src": "images/movie1.png"},
+            "choices": [
+                {"text": "okay!", "id": "hungry?"}
+            ]
+        },
+        "hungry?":{
+            "content": "Atlantic: \"Hey uhm, if you're hungry, There are some food in the back!\"",
+            "image": "prev",
+            "choices": [
+                {"text": "Oh I'm starving..", "id": "food"},
+                {"text": "I'm good, lets just watch the movie", "id": "movies2"}
+            ]
+        },
+        "food":{
+            "content": "You finally have a meal after wandering in the store the whole day, you feel full and ready to chill with Atlantic",
+            "image": {"src": "images/food.png"},
+            "choices": [
+                {"text": "Next", "id": "movies2"}
+            ]
+        },
+        "movies2":{
+            "content": "You and Atlantic watched a few movies together, you feel like you've known her for a long time..",
+            "image": {"src": "images/movie2.png"},
+            "choices": [
+                {"text": "Next", "id": "movies3"}
+            ]
+        },
+        "movies3":{
+            "content": "After watching a few movies, you feel tired.. \n\nYou: \"I'm tired.. I think we should go to sleep..\" \nAtlantic: \"Aw I wanna stay up with you :<..\" \nYou:...",
+            "image": "prev",
+            "choices": [
+                {"text": "Next", "id": "sleep"}
+            ]
+        },
+        "sleep":{
+            "content": "Atlantic: \"Okay fine.. I got a double bed, lets sleep together!\"",
+            "image": {"src": "images/come-with-me.png"},
+            "choices": [
+                {"text": "Okay!", "id": "sleep with her"},
+                {"text": "I'm good, I'll sleep on the couch", "id": "couch"}
+            ]
+        },
+        "sleep with her":{
+            "content": "You and Atlantic slept together, you feel the warmth of her body radiating through you.. you close your eyes and drift off to sleep, feeling safe and happy.",
+            "image": {"src": "images/black.png"},
+            "choices": [
+                {"text": "Next", "id": "stay"}
+            ]
+        },
+        "couch":{
+            "content": "Atlantic: \":<.. okay..\"",
+            "image": "prev",
+            "choices": [
+                {"text": "Next", "id": "couch2"}
+            ]
+        },
+        "couch2":{
+            "content": "You slept on the couch, you feel the coldness of the night seeping through your skin.. you close your eyes and drift off to sleep, feeling cold and lonely.",
+            "image": {"src": "images/black.png"},
+            "choices": [
+                {"text": "Next", "id": "leave"}
+            ]
+        },
+        "stay":{
+            "content": "You woke up, and she ask you to stay with her, she love your presence and she want you to stay with her forever.. You agreed and you both live happily ever after..",
+            "image": "prev",
+            "choices": null
+        },
+        "leave":{
+            "content": "You woke up, and you packed your stuff. you say goodbye to her and you left the house, continue your journey in the infinite ikea store..",
+            "image": "prev",
+            "choices": null
+        }
+    } 
+}
